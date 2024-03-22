@@ -1,5 +1,29 @@
 {
+	"name": "@vscode/windows-registry",
+	"version": "0.0.1",
+	"private": false,
 	"description": "A native node module for accessing the windows registry",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"scripts": {
+		"compile": "tsc -p ./",
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
 	"devDependencies": {
 		"@types/mocha": "10.0.6",
 		"@types/node": "20.11.30",
@@ -8,12 +32,7 @@
 		"typescript": "5.4.2",
 		"typescript-esbuild": "0.4.5"
 	},
-	"main": "dist/index.js",
-	"name": "@vscode/windows-registry",
-	"scripts": {
-		"compile": "tsc -p ./",
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
-	},
-	"type": "module",
-	"typings": "dist/index.d.ts"
+	"publishConfig": {
+		"access": "public"
+	}
 }
