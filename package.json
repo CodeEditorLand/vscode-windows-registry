@@ -1,12 +1,12 @@
 {
-	"description": "A native node module for accessing the windows registry",
-	"devDependencies": {
-		"@types/node": "22.7.5"
-	},
-	"main": "dist/index.js",
 	"name": "@vscode/windows-registry",
+	"description": "A native node module for accessing the windows registry",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
 	"scripts": {
 		"compile": "tsc -p ./"
 	},
-	"typings": "dist/index.d.ts"
+	"devDependencies": {
+		"@types/node": "22.7.5"
+	}
 }
