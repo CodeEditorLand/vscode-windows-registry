@@ -1,13 +1,13 @@
 {
-	"dependencies": {},
-	"description": "A native node module for accessing the windows registry",
-	"devDependencies": {
-		"@types/node": "22.10.1"
-	},
-	"main": "dist/index.js",
 	"name": "@codeeditorland/windows-registry",
+	"description": "A native node module for accessing the windows registry",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
 	"scripts": {
 		"compile": "tsc -p ./"
 	},
-	"typings": "dist/index.d.ts"
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "22.10.1"
+	}
 }
